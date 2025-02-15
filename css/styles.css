@@ -712,3 +712,100 @@ body {
     margin-bottom: 75px;
   }
 }
+
+.opportunities-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.oppor-list {
+  padding: 80px 20px;
+  background-color: #1b414b;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  counter-reset: list-counter;
+}
+
+.oppor-item-cont {
+  position: relative;
+}
+
+.oppor-item-cont::before {
+  counter-increment: list-counter;
+  content: "0" counter(list-counter);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
+  position: absolute;
+  padding-bottom: 18px;
+  border-bottom: 2px solid rgba(251, 251, 251, 0.1);
+  width: 100%;
+}
+
+.oppor-text {
+  margin-top: 66px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  opacity: 0.8;
+}
+
+.opportunities-image {
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .oppor-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    padding: 90px 32px;
+  }
+
+  .oppor-item-cont {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+
+  .oppor-text {
+    max-width: 260px;
+    font-size: 13px;
+    line-height: 115%;
+    margin-top: 71px;
+  }
+
+  .oppor-item-cont::before {
+    font-size: 32px;
+  }
+
+  .opportunities-block {
+    column-gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .oppor-list {
+    column-gap: 44px;
+    padding: 90px 50px;
+  }
+
+  .oppor-item-cont {
+    flex-basis: calc((100% - 44px) / 2);
+  }
+
+  .opportunities-block {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .opportunities-image {
+    min-width: 432px;
+    min-height: 424px;
+  }
+}
