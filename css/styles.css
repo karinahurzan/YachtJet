@@ -24,8 +24,9 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+button,
+a {
+  cursor: url("/img/cursor.png"), auto;
 }
 
 img {
@@ -123,7 +124,6 @@ body {
 }
 
 .burger-button {
-  cursor: pointer;
   background-color: transparent;
   border: none;
   padding: 0;
@@ -290,7 +290,6 @@ body {
   display: block;
   margin: 0 auto;
   border: none;
-  cursor: pointer;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
@@ -631,7 +630,6 @@ body {
   background-color: transparent;
   margin: 0 auto;
   display: block;
-  cursor: pointer;
   transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 }
 
