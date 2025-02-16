@@ -809,3 +809,143 @@ body {
     min-height: 424px;
   }
 }
+
+.block-form {
+  margin-bottom: 80px;
+}
+
+.rent-header {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.rent-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rent-input,
+.rent-textarea {
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding: 14px 18px;
+  background-color: transparent;
+  outline: transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  color: #fbfbfb;
+  width: 100%;
+}
+
+.rent-input::placeholder,
+.rent-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+.rent-input:focus,
+.rent-textarea:focus {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+
+.invalid-name,
+.invalid-email,
+.invalid-number {
+  display: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  color: #7a3145;
+  margin-left: 19px;
+  margin-top: 4px;
+}
+
+.name-input:not(:placeholder-shown):invalid ~ .invalid-name {
+  display: block;
+}
+
+.email-input:not(:placeholder-shown):invalid ~ .invalid-email {
+  display: block;
+}
+
+.number-input:not(:placeholder-shown):invalid ~ .invalid-number {
+  display: block;
+}
+
+.rent-button {
+  border-radius: 15px;
+  padding: 14px 44px;
+  background-color: #1b414b;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border: none;
+  max-width: 122px;
+  margin-top: 40px;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.rent-button:hover,
+.rent-button:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+.rent-image {
+  border-radius: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .block-form {
+    max-width: 473px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .rent-header {
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
+
+  .rent-input,
+  .rent-textarea {
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .rent-button {
+    padding: 18px 75px;
+    max-width: 194px;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rent-block {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  .block-form {
+    min-width: 473px;
+    margin: 0;
+  }
+
+  .rent-button {
+    padding: 18px 75px;
+    max-width: 194px;
+    font-size: 18px;
+    line-height: 110%;
+  }
+}

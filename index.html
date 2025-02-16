@@ -391,7 +391,90 @@
                 ./img/opportunities/opportunities-mob@2x.jpg 2x
               "
             />
-            <img src="./img/opportunities/opportunities-mob.jpg" class="opportunities-image" alt="Yacht" />
+            <img
+              src="./img/opportunities/opportunities-mob.jpg"
+              class="opportunities-image"
+              alt="Yacht"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <section class="section rent">
+        <div class="container rent-block">
+          <div class="block-form">
+            <h2 class="rent-header">Rent a yacht now</h2>
+            <form class="rent-form">
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="full-name"
+                  class="rent-input name-input"
+                  pattern="([A-z]{2,}) ([A-z]{2,})"
+                  aria-label="Full Name"
+                  placeholder="Full name"
+                  required
+                />
+                <p class="invalid-name">Invalid name, try again</p>
+              </div>
+              <div class="input-area">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="rent-input email-input"
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                  placeholder="Email"
+                  aria-label="Email"
+                  required
+                />
+                <p class="invalid-email">Invalid email, try again</p>
+              </div>
+              <div class="input-area">
+                <input
+                  type="tel"
+                  name="phoneNumber"
+                  id="phone-number"
+                  class="rent-input number-input"
+                  pattern="\+380\d{9}\b"
+                  placeholder="Phone number"
+                  aria-label="Phone number"
+                  required
+                />
+                <p class="invalid-number">Invalid number, try again</p>
+              </div>
+
+              <textarea
+                name="textarea"
+                id="textarea"
+                rows="5"
+                placeholder="Comment"
+                class="rent-textarea"
+              ></textarea>
+              <button type="submit" class="rent-button">Send</button>
+            </form>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/rent/rent-desc.jpg    1x,
+                ./img/rent/rent-desc@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/rent/rent-tab.jpg 1x, ./img/rent/rent-tab@2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/rent/rent-mob.jpg    1x,
+                ./img/rent/rent-mob@2x.jpg 2x
+              "
+            />
+            <img class="rent-image" src="./img/rent/rent-mob.jpg" alt="Yacht">
           </picture>
         </div>
       </section>
