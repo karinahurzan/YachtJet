@@ -441,8 +441,7 @@ body {
 
 .desc-image {
   border-radius: 24px 24px 0 0;
-  min-width: 335px;
-  min-height: 395px;
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -475,8 +474,7 @@ body {
   }
 
   .desc-image {
-    min-width: 704px;
-    min-height: 470px;
+    min-width: 100%;
   }
 }
 
@@ -505,8 +503,7 @@ body {
   }
 
   .desc-image {
-    min-width: 1180px;
-    min-height: 470px;
+    min-width: 100%;
   }
 }
 
@@ -543,8 +540,7 @@ body {
 
 .choice-image {
   border-radius: 24px;
-  min-width: 302px;
-  min-height: 240px;
+  min-width: 100%;
   margin-bottom: 16px;
 }
 
@@ -658,8 +654,7 @@ body {
   }
 
   .choice-image {
-    min-width: 304px;
-    min-height: 268px;
+    min-width: 100%;
   }
 
   .choice-header {
@@ -701,8 +696,7 @@ body {
   }
 
   .choice-image {
-    min-width: 345px;
-    min-height: 268px;
+    min-width: 100%;
   }
 
   .choice-header {
@@ -759,6 +753,7 @@ body {
 
 .opportunities-image {
   border-radius: 24px;
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -903,6 +898,7 @@ body {
 
 .rent-image {
   border-radius: 24px;
+  min-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
