@@ -838,6 +838,10 @@ body {
   width: 100%;
 }
 
+.rent-textarea {
+  resize: none;
+}
+
 .rent-input::placeholder,
 .rent-textarea::placeholder {
   font-weight: 400;
