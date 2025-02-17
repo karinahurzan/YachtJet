@@ -32,10 +32,10 @@
 
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-href current">about</a>
+              <a href="#about" class="nav-href current">about</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-href">yachts</a></li>
-            <li class="nav-item"><a href="#" class="nav-href">reviews</a></li>
+            <li class="nav-item"><a href="#yachts" class="nav-href">yachts</a></li>
+            <li class="nav-item"><a href="#reviews" class="nav-href">reviews</a></li>
           </ul>
         </nav>
         <ul class="soc-list">
@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <section class="description">
+      <section class="description" id="about">
         <div class="container description-block">
           <div class="desc-info">
             <h2 class="desc-header">
@@ -137,7 +137,7 @@
         </div>
       </section>
 
-      <section class="choice section">
+      <section class="choice section" id="yachts">
         <div class="container choice-block">
           <h2 class="choice-header">
             Choose your dream yacht&nbsp;and sail away into the sunset
@@ -469,13 +469,115 @@
             />
             <source
               media="(min-width: 375px)"
-              srcset="
-                ./img/rent/rent-mob.jpg    1x,
-                ./img/rent/rent-mob@2x.jpg 2x
-              "
+              srcset="./img/rent/rent-mob.jpg 1x, ./img/rent/rent-mob@2x.jpg 2x"
             />
-            <img class="rent-image" src="./img/rent/rent-mob.jpg" alt="Yacht">
+            <img class="rent-image" src="./img/rent/rent-mob.jpg" alt="Yacht" />
           </picture>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container reviews-block">
+          <h2 class="reviews-header">
+            YachtJet take pride in providing the best possible service and
+            experience to our customers
+          </h2>
+          <p class="reviews-text">
+            Our customers have enjoyed unforgettable moments on our yachts.
+            Don't just take our word for it - read on to find out what they have
+            to say about their journey with us.
+          </p>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/reviews/reviews-desc.jpg    1x,
+                    ./img/reviews/reviews-desc@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/reviews/reviews-tab.jpg    1x,
+                    ./img/reviews/reviews-tab@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 375px)"
+                  srcset="
+                    ./img/reviews/reviews-mob.jpg    1x,
+                    ./img/reviews/reviews-mob@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/reviews/reviews-mob.jpg"
+                  alt="Yacht"
+                  class="reviews-photo"
+                />
+              </picture>
+              <h3 class="review-name">John Wax</h3>
+              <p class="review-text">
+                I rented the Lagoon 620 with my family for a week-long vacation
+                and it was the best decision ever. The yacht was spacious,
+                comfortable, and luxurious, and the crew took care of
+                everything.
+              </p>
+            </li>
+            <li class="reviews-item review1">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/reviews/reviews-desc1.jpg    1x,
+                    ./img/reviews/reviews-desc1@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/reviews/reviews-tab1.jpg    1x,
+                    ./img/reviews/reviews-tab1@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/reviews/reviews-tab1.jpg"
+                  alt="Yacht"
+                  class="reviews-photo"
+                />
+              </picture>
+              <h3 class="review-name">Victoria Romashenko</h3>
+              <p class="review-text">
+                The Sunseeker Manhattan 66 was the perfect choice for our
+                romantic getaway. The yacht was beautifully designed, with all
+                the amenities we needed, and the crew was attentive and
+                friendly.
+              </p>
+            </li>
+            <li class="reviews-item review2">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./img/reviews/reviews-desc2.jpg    1x,
+                    ./img/reviews/reviews-desc2@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./img/reviews/reviews-desc2.jpg"
+                  alt="Yacht"
+                  class="reviews-photo"
+                />
+              </picture>
+              <h3 class="review-name">Ihor Trachuk</h3>
+              <p class="review-text">
+                The Azimut 80 was the most luxurious yacht I've ever been on.
+                The cabins were spacious and elegant, and the outdoor areas were
+                perfect for relaxing and entertaining. Worth every penny!
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
