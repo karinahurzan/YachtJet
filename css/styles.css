@@ -1059,3 +1059,116 @@ body {
     padding: 32px 28px;
   }
 }
+
+.footer {
+  padding-top: 40px;
+}
+
+.foot {
+  border-radius: 24px 24px 0 0;
+  background-color: #1b414b;
+  padding: 40px 30px 20px;
+  max-width: 355px;
+}
+
+.foot-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 80px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #fbfbfb;
+  margin-right: auto;
+}
+
+.foot-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.foot-href {
+  min-width: 66px;
+  min-height: 40px;
+  border-radius: 8px;
+  background-color: rgba(251, 251, 251, 0.3);
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 130%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.foot-href:hover,
+.foot-href:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+.foot-soc-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.foot-soc-icon {
+  fill: #fbfbfb;
+  transition: fill 300ms ease-in-out;
+}
+
+.foot-soc-icon:hover,
+.foot-soc-icon:focus {
+  fill: rgba(251, 251, 251, 0.8);
+}
+
+.foot-soc-href {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.footer-header {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  margin-bottom: 82px;
+}
+
+.footer-privacy {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot-priv {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: rgba(251, 251, 251, 0.4);
+}
